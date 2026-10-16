@@ -3,5 +3,8 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+    val data = fetchData(args[0])
+    println("Lowest: ${data.minBy { it.second }}")
+    println("Highest: ${data.maxBy { it.second }}")
+    println("Average: %.2f".format(data.map { it.second }.average()))
 }

@@ -5,5 +5,5 @@ fun main(args: Array<String>) {
         return
     }
     val data = readData(args[0])
-    println("Median: ${median(data)}")
+    stats(data)
 }
